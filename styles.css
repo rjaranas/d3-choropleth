@@ -1,0 +1,93 @@
+html, body{
+    height:100%;
+    width:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    overflow: hidden;
+    background-color:black;
+    z-index: -40;
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+
+.mainSvg { 
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    outline: 1px solid;
+    background-color: rgb(20, 20, 22);
+  }
+
+.legendSvg {
+  z-index: 6;
+  outline: 1px solid;
+}
+
+  path {
+
+    stroke: black;
+    stroke-opacity: 0.1;
+    stroke-width: 0.1;
+  }
+
+  .county:hover {
+    fill: red;
+  }
+
+  #tooltip {
+    color:white;
+    position: absolute;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:black;
+    border: 1px solid;
+    font-size: 1.4em;
+    opacity: 0;
+    z-index: 20;
+  
+}
+
+.tAndD-container {
+  z-index: 6;
+  display: block;
+  position: absolute;
+  top: -30px;
+  text-align: center;
+}
+
+#title {
+  color: white;
+  font-size: 3.5em;
+}
+
+#description {
+  color: white;
+  font-size: 1.3em;
+}
+
+#read-me {
+  color:white;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+a {
+  font-size: 1.2em;
+  z-index: 20;
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  color:red;
+}
+
+.source-container {
+  top: 1200px;
+  display: flex;
+  position: absolute;
+
+}
