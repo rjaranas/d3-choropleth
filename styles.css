@@ -10,14 +10,16 @@ html, body{
     background-color:black;
     z-index: -40;
     font-family: 'PT Sans Narrow', sans-serif;
+    position: absolute;
   }
 
 .mainSvg { 
-    max-width: 100%;
-    height: auto;
     position: absolute;
     outline: 1px solid;
     background-color: rgb(20, 20, 22);
+    left: 600px;
+
+   
   }
 
 .legendSvg {

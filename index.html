@@ -25,8 +25,8 @@
 
         function choropleth(geojson, dataset) {
 
-            const width = 1200;
-            const height = 900;
+            const width = 1300  ;
+            const height = 700;
 
             const feature = topojson.feature(geojson, geojson.objects.counties)
 
@@ -70,9 +70,12 @@
             .attr('id', 'tooltip')
             .attr('class', 'tooltip')
 
-            const svg = d3.select('body')
+            const container = d3.select('body')
+            .append('div')
+
+    
+            const svg = container
             .append('svg')
-            .attr('viewBox', [0, 0, width, height])
             .attr('width', width)
             .attr('height', height)
             .attr('class', 'mainSvg')
